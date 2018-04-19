@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+	<title>DD- Org. Reg.</title>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width", initial-scale= "1">
+
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+	<!-- Title icon -->
+	<link rel="icon" type="image/jpg" href="title_image.jpg">
+
+	<script>document.createElement("line")</script> <!--Optional!-->
+
+	<link rel="stylesheet" href="style.css">
+
+	<style type="text/css">
+
+		body
+		{
+			background: url('background.jpg') no-repeat;
+			background-size: cover;
+		}
+
+		line
+		{
+			display: block;
+			background-color: steelblue;
+			padding: 2px;
+		}
+	</style>
+
+		<script>
+function validateForm()
+{
+
+
+
+
+    if(document.myform.cname.value=="")
+    {
+        alert("Please Enter The Company name");
+        document.myform.cname.focus();
+        return false;
+    }
+
+
+
+     if(document.myform.o_l1.value=="")
+    {
+        alert("Please Enter The Line 1 Address");
+        document.myform.o_l1.focus();
+        return false;
+    }
+
+     if(document.myform.o_l2.value=="")
+    {
+        alert("Please Enter The Line 2 Address");
+        document.myform.o_l2.focus();
+        return false;
+    }
+
+     if(document.myform.o_city.value=="")
+    {
+        alert("Please Enter The City");
+        document.myform.o_city.focus();
+        return false;
+    }
+
+     if(document.myform.o_state.value=="")
+    {
+        alert("Please Enter The State");
+        document.myform.o_state.focus();
+        return false;
+    }
+
+     if(document.myform.o_pincode.value=="")
+    {
+        alert("Please Enter The Pincode");
+        document.myform.o_pincode.focus();
+        return false;
+    }
+
+
+     var n=document.myform.o_phone.value;
+	 if(n==''||n.length<10||isNaN(n))
+	 {
+	 	  alert("Please Enter valid Contact Number");
+        document.myform.o_phone.focus();
+        return false;
+
+	 }
+
+    var Email=document.myform.o_email.value;
+    atpos=Email.indexOf("@")
+    dotpos=Email.lastIndexOf(".");
+	 if(Email==""||atpos<1||(dotpos<2))
+	 {
+	     alert("Please Enter Correct Email");
+        document.myform.o_email.focus();
+        return false;
+	 }
+
+
+    if(document.myform.o_uid.value=="")
+    {
+        alert("Please Enter The Username");
+        document.myform.o_uid.focus();
+        return false;
+    }
+
+    if(document.myform.o_pwd.value=="")
+    {
+        alert("Please Enter The Password");
+        document.myform.o_pwd.focus();
+        return false;
+    }
+
+    if(document.myform.o_cpwd.value=="")
+    {
+        alert("Please Enter The Confirm Password");
+        document.myform.o_cpwd.focus();
+        return false;
+    }
+
+}
+</script>
+
+</head>
+
+<body>
+
+	<!-- Sections -->
+				 <section id="social" class="social">
+						 <div class="container">
+								 <!-- Example row of columns -->
+								 <div class="row">
+										 <div class="social-wrapper">
+												 <div class="col-md-6">
+														 <div class="social-icon">
+																 <a href="#"><i class="fa fa-facebook"></i></a>
+																 <a href="#"><i class="fa fa-twitter"></i></a>
+																 <a href="#"><i class="fa fa-google-plus"></i></a>
+																 <a href="#"><i class="fa fa-linkedin"></i></a>
+														 </div>
+												 </div>
+												 <div class="col-md-6">
+														 <div class="social-contact">
+																 <a href="#"><i class="fa fa-phone"></i>+91 1234567890</a>
+																 <a href="#"><i class="fa fa-envelope"></i>contact@donationdesk.com</a>
+														 </div>
+												 </div>
+										 </div>
+								 </div>
+						 </div> <!-- /container -->
+				 </section>
+	<!-- Title -->
+	<div class="container">
+		<div class="row" style="background-color: #80ff80;">
+
+			<div class="col-md-1">
+						<img class="img-responsive" src="title_image.jpg" alt="Err!" type="image/jpg" float="center" height="100px" width="100px">
+			</div>
+
+			<div class="col-md-11">
+						<h1 style="text-decoration-color: #003300; text-align: center; ">DONATION DESK</h1>
+			</div>
+		</div>
+	</div>
+
+	<!-- Navbar -->
+	<nav class="navbar navbar-default">
+  	<div class="container">
+    	<!-- Brand and toggle get grouped for better mobile display -->
+      	<div class="navbar-header">
+        	<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          	<span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+        	<ul class="nav navbar-nav navbar-right">
+          	<li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT US</a></li>
+						<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">REGISTER<span class="caret"></span></a>
+							<ul class="dropdown-menu" style="background-color: black;">
+								<li><a href="reg_u.html" style="color: gray;">USER</a></li>
+								<li><a href="reg_o.html" style="color: gray;">ORGANIZATION</a></li>
+							</ul>
+						</li>
+						<li><a href="contact.html">Contact</a></li>
+						<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">SIGN IN<span class="caret"></span></a>
+							<ul class="dropdown-menu" style="background-color: black;">
+								<li><a href="login_u.html" class="login" style="color: gray;">USER</a></li>
+								<li><a href="login_o.html" class="login" style="color: gray;">ORGANIZATION</a></li>
+							</ul>
+						</li>
+          </ul>
+
+				</div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+
+	<div class="container" style="background-color: white;">
+
+		<br>
+		<br>
+
+		<center>
+
+			<h2 style="color: steelblue;"><i><b>REGISTRATION FORM</b></i></h2>
+			<br>
+			<line></line>
+			<br>
+			<br>
+
+			<p align="left" style="color: forestgreen;"><i>Please fill in the given details</i></p>
+
+			<br>
+
+			<div class="container">
+
+				<!-- <form action="/action_page.php" name="myform" onsubmit="return validateForm()" method="post"> -->
+					<form action="index.html" name="myform" onsubmit="return validateForm()" method="post">
+
+					<fieldset style="color: #006600;">
+						<legend style="color: steelblue;"><b><i>Company Details</i></b></legend>
+
+						<div class="row">
+							<div class="col-md-2 col-md-offset-2"><label for="cname">Company Name</label></div>
+							<div class="col-md-1"><label>:</label></div>
+							<div class="col-md-4">
+								<div class="form-group">
+				 					<input type="text" class="form-control" id="cname" placeholder="Enter Company name" name="cname">
+					    		</div>
+							</div>
+						</div>
+
+						<br>
+
+						<div class="row">
+							<div class="col-md-2 col-md-offset-2"><label for="address">Address</label></div>
+							<div class="col-md-1"><label>:</label></div>
+							<div class="col-md-4">
+								<div class="form-group">
+
+								    <input type="text" class="form-control" id="o_l1" placeholder="Enter line 1" name="o_l1">
+								    <input type="text" class="form-control" id="o_l2" placeholder="Enter line 2" name="o_l2">
+								    <input type="text" class="form-control" id="o_city" placeholder="Enter city" name="o_city">
+								    <input type="text" class="form-control" id="o_state" placeholder="Enter state" name="o_state">
+								    <input type="text" class="form-control" id="o_pincode" placeholder="Enter pincode" name="o_pincode">
+					    		</div>
+							</div>
+						</div>
+
+						<br>
+
+						<div class="row">
+							<div class="col-md-2 col-md-offset-2"><label for="phone">Phone Number</label></div>
+							<div class="col-md-1"><label>:</label></div>
+							<div class="col-md-4">
+								<div class="form-group">
+					    			<input type="tel" class="form-control" id="o_phone" placeholder="Enter phone number" name="o_phone">
+					    		</div>
+							</div>
+						</div>
+
+						<br>
+
+						<div class="row">
+							<div class="col-md-2 col-md-offset-2"><label for="email">Email</label></div>
+							<div class="col-md-1"><label>:</label></div>
+							<div class="col-md-4">
+								<div class="form-group">
+					      			<input type="email" class="form-control" id="o_email" placeholder="Enter email id" name="o_email">
+					    		</div>
+							</div>
+						</div>
+					</fieldset>
+
+					<br>
+					<br>
+
+					<fieldset style="color: #006600;">
+						<legend style="color: steelblue;"><b><i>Log In Details</i></b></legend>
+
+						<div class="row">
+							<div class="col-md-2 col-md-offset-2"><label for="uid">User Name</label></div>
+							<div class="col-md-1"><label>:</label></div>
+							<div class="col-md-4">
+								<div class="form-group">
+					 				<input type="text" class="form-control" id="o_uid" placeholder="Enter username" name="o_uid">
+					    		</div>
+							</div>
+						</div>
+
+						<br>
+
+						<div class="row">
+							<div class="col-md-2 col-md-offset-2"><label for="pwd">Password</label></div>
+							<div class="col-md-1"><label>:</label></div>
+							<div class="col-md-4">
+								<div class="form-group">
+					    			<input type="password" class="form-control" id="u_pwd" placeholder="Enter password" name="o_pwd">
+					    		</div>
+							</div>
+						</div>
+
+						<br>
+
+						<div class="row">
+							<div class="col-md-2 col-md-offset-2"><label for="cpwd">Confirm Password</label></div>
+							<div class="col-md-1"><label>:</label></div>
+							<div class="col-md-4">
+								<div class="form-group">
+					    			<input type="password" class="form-control" id="o_cpwd" placeholder="Re-enter password" name="o_cpwd">
+					    		</div>
+							</div>
+						</div>
+					</fieldset>
+
+					<br>
+					<br>
+
+			    	<button type="submit" class="btn btn-success" onclick="myFunction()">Register</button>
+			    	<button type="reset" class="btn btn-primary">Reset</button>
+
+					<!--	<script>
+						function myFunction() {
+						    alert("REGISTRATION SUCCESSFUL");
+								location.href = "index.html";
+						}
+					</script> -->
+
+			  	</form>
+			</div>
+		</center>
+
+		<br>
+		<br>
+
+		<line style="color: white; background-color: black;">Designed by TE- IT- 48 50 51 54</line>
+	</div>
+</body>
+</html>

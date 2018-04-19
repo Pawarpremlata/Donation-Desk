@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+	<title>DD- User Login</title>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width", initial-scale= "1">
+
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+	<!-- Title icon -->
+	<link rel="icon" type="image/png" href="title_image.png">
+
+	<script>document.createElement("line")</script> <!--Optional!-->
+
+	<link rel="stylesheet" href="style.css">
+
+	<style type="text/css">
+
+		body
+		{
+			background: url('background.jpg') no-repeat;
+			background-size: cover;
+		}
+
+		line
+		{
+			display: block;
+			background-color: steelblue;
+			padding: 2px;
+		}
+
+		input[type=text], 	input[type=password]
+		{
+			width: 60%;
+			float: left;
+			background-color: white;
+			border-width: 1px 1px 1px 1px;
+			border-radius: 3px;
+			padding: 5px;
+			margin: 3px auto;
+			font-size: 16px;
+			background-position: 1px 1px;
+			background-repeat: no-repeat;
+			-webkit-transition: width 0.4s;
+			transition: width 0.4s;
+		}
+	</style>
+
+</head>
+
+<body>
+
+	<!-- Sections -->
+         <section id="social" class="social">
+             <div class="container">
+                 <!-- Example row of columns -->
+                 <div class="row">
+                     <div class="social-wrapper">
+                         <div class="col-md-6">
+                             <div class="social-icon">
+                                 <a href="#"><i class="fa fa-facebook"></i></a>
+                                 <a href="#"><i class="fa fa-twitter"></i></a>
+                                 <a href="#"><i class="fa fa-google-plus"></i></a>
+                                 <a href="#"><i class="fa fa-linkedin"></i></a>
+                             </div>
+                         </div>
+                         <div class="col-md-6">
+                             <div class="social-contact">
+                                 <a href="#"><i class="fa fa-phone"></i>+91 1234567890</a>
+                                 <a href="#"><i class="fa fa-envelope"></i>contact@donationdesk.com</a>
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+             </div> <!-- /container -->
+         </section>
+
+	<!-- Title -->
+	<div class="container">
+		<div class="row" style="background-color: #80ff80;">
+
+			<div class="col-md-1">
+						<img class="img-responsive" src="logo.png" alt="Err!" type="image/png" float="center" height="100px" width="100px">
+			</div>
+
+			<div class="col-md-11">
+						<h1 style="text-decoration-color: #003300; text-align: center; ">DONATION DESK</h1>
+			</div>
+		</div>
+	</div>
+
+	<!-- Navbar -->
+	<nav class="navbar navbar-default">
+		<div class="container">
+			<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+				</div>
+
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="index.html">HOME</a></li>
+						<li><a href="about.html">ABOUT US</a></li>
+						<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">REGISTER<span class="caret"></span></a>
+							<ul class="dropdown-menu" style="background-color: black;">
+								<li><a href="reg_u.html" style="color: gray;">USER</a></li>
+								<li><a href="reg_o.html" style="color: gray;">ORGANIZATION</a></li>
+							</ul>
+						</li>
+						<li><a href="contact.html">Contact</a></li>
+						<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">SIGN IN<span class="caret"></span></a>
+							<ul class="dropdown-menu" style="background-color: black;">
+								<li class="active"><a href="login_u.html" class="login" style="color: gray;">USER</a></li>
+								<li><a href="login_o.html" class="login" style="color: gray;">ORGANIZATION</a></li>
+							</ul>
+						</li>
+					</ul>
+
+				</div><!-- /.navbar-collapse -->
+			</div><!-- /.container-fluid -->
+		</nav>
+
+	<div class="container" style="background-color: white;">
+
+		<br>
+		<br>
+
+		<center>
+			<h2 style="color: steelblue;"><i><b>SIGN IN</b></i></h2>
+
+			<br>
+			<br>
+			<line></line>
+			<br>
+			<br>
+
+			<button type="button" class="btn btn-success" data-toggle="modal" data-target="#popUpWindow">Open Log In Window</button>
+		</center>
+
+		<div class="modal fade" id="popUpWindow">
+
+			<div class="modal-dailog">
+
+				<center>
+				<div class="modal-content" style="width: 40%;">
+
+					<!-- Header -->
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal">&times;</button>
+						<h3 class="modal-title">Sign in</h3>
+					</div>
+
+					<!-- Body (Form) -->
+					<div class="modal-body">
+						<form role="form">
+							<div class="form-group">  <!-- Within form-group only one field is allowwed -->
+								<input type="text" class="form-control" placeholder="Username" id="u_l_name">
+							</div>
+
+							<div class="form-group">  <!-- Within form-group only one field is allowwed -->
+								<input type="password" class="form-control" placeholder="Password" id="u_l_pwd">
+							</div>
+						</form>
+					</div>
+
+					<!-- Button -->
+					<div class="modal-footer">
+						<center><button class="btn btn-primary btn-block" style="width: 50%;border-radius:3px;margin: 2px;" onclick="myFunction()">Sign In</button></center>
+						<script>
+						function myFunction() {
+								alert("LOGIN SUCCESSFUL");
+								location.href = "home_u.html";
+						}
+						</script>
+					</div>
+				</div>
+				</center>
+			</div>
+		</div>
+
+		<br>
+		<br>
+		<line></line>
+		<br>
+		<br>
+
+		<line style="color: white; background-color: black;">Designed by TE- IT- 48 50 51 54</line>
+	</div>
+</body>
+</html>

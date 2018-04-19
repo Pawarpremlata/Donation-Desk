@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+	<title>MyProject-User App-Sell</title>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width", initial-scale= "1">
+
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+	<!-- Title icon -->
+	<link rel="icon" type="image/png" href="title_image.png">
+
+	<script>document.createElement("line")</script> <!--Optional!-->
+	
+	<style type="text/css">
+
+		body
+		{
+			background: url('background.jpg') no-repeat;
+			background-size: cover;
+		}
+
+		line
+		{
+			display: block;	
+			background-color: steelblue;	
+			padding: 1px;	
+		}
+
+		input[type=text], input[type=num]
+		{
+			width: 90%;
+			float: left;
+			border-color: lightgrey;
+			background-color: white;
+			border-width: 1px 2px 1px 2px;
+			border-style: inset;
+			border-radius: 5px;
+			padding: 10px;
+			margin: 8px 0;
+			box-sizing: border-box;
+			font-size: 16px;
+			background-position: 1px 1px; 
+			background-repeat: no-repeat;
+			-webkit-transition: width 0.4s;
+			transition: width 0.4s;
+		}
+
+		input[type=text]:focus, input[type=num]:focus
+		{
+			width: 100%;
+			border: 3px solid steelblue;
+		}
+
+	</style>
+
+</head>
+
+<body>
+
+	<!-- Title -->
+	<div class="container">
+		<div class="row" style="background-color: #80ff80;">
+
+			<div class="col-md-1">
+						<img class="img-responsive" src="logo.png" alt="Err!" type="image/png" float="center" height="100px" width="100px">
+			</div>
+
+			<div class="col-md-11">
+						<h1 style="text-decoration-color: #003300; text-align: center; ">E-WASTE WEBAPP - USER</h1>
+			</div>
+		</div>
+	</div>
+
+	<!-- Navbar -->
+	<nav class="navbar navbar-inverse container">
+		<div class="container">
+
+			<!-- Logo -->
+			<div class="navbar-header">
+				
+				<!-- For mobile phones Navbar-Toggle -->
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mainNavBar">
+					<span class="icon-bar"><img src="menu.png" type="image/png"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>		
+				</button>
+
+				<a href="index.html" class="navbar-brand">MY PROJECT</a>
+			</div>
+
+			<!-- Menu items -->
+				<!-- For Navbar-Toggle within div: class="collapse navbar-collapse" id="mainNavBar" -->
+			<div class="collapse navbar-collapse" id="mainNavBar">
+
+				<!-- Links on left -->
+				<ul class="nav navbar-nav">
+					<li class="active"><a href="index.html">HOME</a></li>
+					<li><a href="#">ABOUT US</a></li>
+
+					<!-- For drop down menu -->
+					<li class="dropdown">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown">SERVICES<span class="caret"></span></a>
+						<ul class="dropdown-menu" style="background-color: black;">
+							<li><a href="#" style="color: gray;">E-WASTE MANAGEMENT</a></li>
+							<li><a href="#" style="color: gray;">PRODUCTS WE RECYCLE</a></li>
+							<li><a href="#" style="color: gray;">E-CALCULATOR</a></li>
+						</ul>
+					</li> 
+
+					<li><a href="#">CLIENTS</a></li>
+					<li><a href="sell.html">SELL E-WASTE</a></li>
+					<li><a href="register.html">REGISTER</a></li>
+					<li><a href="#">CONTACT US</a></li>
+				</ul>
+
+				<!-- To have links on RHS of navbar -->
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="#"><span class="glyphicon glyphicon-off"></span></a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<div class="container" style="background-color: white;">
+
+		<br>
+		<br>
+
+		<center>
+
+			<h2 style="color: steelblue;"><i><b>SELL YOUR PRODUCTS HERE</b></i></h2>
+			<br>
+			<line></line>
+			<br>
+			<br>
+
+			<p align="left" style="color: forestgreen;"><i>Please fill in the given details</i></p>
+
+			<br>
+
+			<div class="container">
+
+				<form action="/action_page.php">
+
+					<fieldset style="color: #006600;">
+						<legend style="color: steelblue;"><b><i>Product-1 Details</i></b></legend>
+
+						<div class="row">
+							<div class="col-md-3 col-md-offset-2"><label for="uid">Product-1 Name</label></div>
+							<div class="col-md-2"><label>:</label></div>
+							<div class="col-md-3">
+								<div class="form-group">
+					 				<input type="text" class="form-control" id="p1_name" placeholder="Enter name of the Product" name="p1_name">
+					    		</div>
+							</div>
+						</div>
+
+						<br>
+
+						<div class="row">
+							<div class="col-md-3 col-md-offset-2"><label for="pwd">Company Name</label></div>
+							<div class="col-md-2"><label>:</label></div>
+							<div class="col-md-3">
+								<div class="form-group">
+					    			<input type="text" class="form-control" id="p1_cname" placeholder="Enter company name" name="p1_cname">
+					    		</div>
+							</div>
+						</div>
+
+						<br>
+
+						<div class="row">
+							<div class="col-md-3 col-md-offset-2"><label for="cpwd">Model Number</label></div>
+							<div class="col-md-2"><label>:</label></div>
+							<div class="col-md-3">
+								<div class="form-group">
+					    			<input type="text" class="form-control" id="p1_mnum" placeholder="Enter model number" name="p1_mnum">
+					    		</div>
+							</div>
+						</div>  
+
+						<br>
+
+						<div class="row">
+							<div class="col-md-3 col-md-offset-2"><label for="cpwd">Quantity</label></div>
+							<div class="col-md-2"><label>:</label></div>
+							<div class="col-md-3">
+								<div class="form-group">
+					    			<input type="number" class="form-control" id="p1_qnt" placeholder="Enter quantity" name="p1_qnt">
+					    		</div>
+							</div>
+						</div>  
+					</fieldset>
+
+					<fieldset style="color: #006600;">
+						<legend style="color: steelblue;"><b><i>Product-2 Details</i></b></legend>
+
+						<div class="row">
+							<div class="col-md-3 col-md-offset-2"><label for="uid">Product-2 Name</label></div>
+							<div class="col-md-2"><label>:</label></div>
+							<div class="col-md-3">
+								<div class="form-group">
+					 				<input type="text" class="form-control" id="p2_name" placeholder="Enter name of the Product" name="p2_name">
+					    		</div>
+							</div>
+						</div>
+
+						<br>
+
+						<div class="row">
+							<div class="col-md-3 col-md-offset-2"><label for="pwd">Company Name</label></div>
+							<div class="col-md-2"><label>:</label></div>
+							<div class="col-md-3">
+								<div class="form-group">
+					    			<input type="text" class="form-control" id="p2_cname" placeholder="Enter company name" name="p2_cname">
+					    		</div>
+							</div>
+						</div>
+
+						<br>
+
+						<div class="row">
+							<div class="col-md-3 col-md-offset-2"><label for="cpwd">Model Number</label></div>
+							<div class="col-md-2"><label>:</label></div>
+							<div class="col-md-3">
+								<div class="form-group">
+					    			<input type="text" class="form-control" id="p2_mnum" placeholder="Enter model number" name="p2_mnum">
+					    		</div>
+							</div>
+						</div>  
+
+						<br>
+
+						<div class="row">
+							<div class="col-md-3 col-md-offset-2"><label for="cpwd">Quantity</label></div>
+							<div class="col-md-2"><label>:</label></div>
+							<div class="col-md-3">
+								<div class="form-group">
+					    			<input type="number" class="form-control" id="p2_qnt" placeholder="Enter quantity" name="p2_qnt">
+					    		</div>
+							</div>
+						</div>  
+					</fieldset>
+
+					<fieldset style="color: #006600;">
+						<legend style="color: steelblue;"><b><i>Product-3 Details</i></b></legend>
+
+						<div class="row">
+							<div class="col-md-3 col-md-offset-2"><label for="uid">Product-3 Name</label></div>
+							<div class="col-md-2"><label>:</label></div>
+							<div class="col-md-3">
+								<div class="form-group">
+					 				<input type="text" class="form-control" id="p3_name" placeholder="Enter name of the Product" name="p3_name">
+					    		</div>
+							</div>
+						</div>
+
+						<br>
+
+						<div class="row">
+							<div class="col-md-3 col-md-offset-2"><label for="pwd">Company Name</label></div>
+							<div class="col-md-2"><label>:</label></div>
+							<div class="col-md-3">
+								<div class="form-group">
+					    			<input type="text" class="form-control" id="p3_cname" placeholder="Enter company name" name="p3_cname">
+					    		</div>
+							</div>
+						</div>
+
+						<br>
+
+						<div class="row">
+							<div class="col-md-3 col-md-offset-2"><label for="cpwd">Model Number</label></div>
+							<div class="col-md-2"><label>:</label></div>
+							<div class="col-md-3">
+								<div class="form-group">
+					    			<input type="text" class="form-control" id="p3_mnum" placeholder="Enter model number" name="p3_mnum">
+					    		</div>
+							</div>
+						</div>  
+
+						<br>
+
+						<div class="row">
+							<div class="col-md-3 col-md-offset-2"><label for="cpwd">Quantity</label></div>
+							<div class="col-md-2"><label>:</label></div>
+							<div class="col-md-3">
+								<div class="form-group">
+					    			<input type="number" class="form-control" id="p3_qnt" placeholder="Enter quantity" name="p3_qnt">
+					    		</div>
+							</div>
+						</div>  
+					</fieldset>
+
+					<br>
+					<br>
+
+			    	<button type="submit" class="btn btn-success">Submit</button>
+			    	<button type="reset" class="btn btn-primary">Reset</button>
+
+			  	</form>
+			</div>
+		</center>
+
+		<br>
+		<br>
+
+		<line style="color: white; background-color: black;">Designed by Nikhita Panchangam</line>
+	</div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
